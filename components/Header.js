@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
 
-function Header (){
+function Header (props){
   return(
     <View style ={styles.header}>
-        <Text style = {styles.text}>Shopping list</Text>
+        <Text style = {styles.text}>{props.title}</Text>
     </View>
   );
 };
