@@ -27,7 +27,7 @@ function App (){
     }
     else{
       setItems(prevItems => {
-        return [{id: uuid, text: item}, ...prevItems]
+        return [{id: uuid, text}, ...prevItems]
       });
     }
   };
