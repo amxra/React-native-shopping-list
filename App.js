@@ -29,7 +29,7 @@ function App (){
   return(
     <View style ={styles.container}>
         <Header />
-        <AddItem/>
+        <AddItem addItem = {addItem} />
         <FlatList data = {items} renderItem={({item}) => <ListItem item = {item} deleteItem = {deleteItem}/>
         }/>
     </View>
