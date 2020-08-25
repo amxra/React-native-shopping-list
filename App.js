@@ -20,6 +20,12 @@ function App (){
     });
   }
 
+  function AddItem (item){
+    setItems(prevItems => {
+      return [{id: uuid, text: item}, ...prevItems]
+    })
+  }
+
   return(
     <View style ={styles.container}>
         <Header />
