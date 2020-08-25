@@ -10,6 +10,10 @@ function Header ({title}){
   );
 };
 
+Header.defaultProps = {
+    title: 'Shopping List'
+}
+
 const styles = StyleSheet.create({
   header:{
     height: 60,

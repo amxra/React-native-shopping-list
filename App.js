@@ -6,7 +6,7 @@ import Header from './components/Header';
 function App (){
   return(
     <View style ={styles.container}>
-        <Header title = 'Shopping List'/>
+        <Header />
     </View>
   );
 };
