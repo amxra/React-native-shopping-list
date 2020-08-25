@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Text, StyleSheet, FlatList} from 'react-native';
+import {View, Text, StyleSheet, FlatList, Alert} from 'react-native';
 import Header from './components/Header';
 import {v4 as uuid } from 'uuid';
 import ListItem from './components/ListItem';
@@ -20,11 +20,17 @@ function App (){
     });
   }
 
-  function addItem (item){
-    setItems(prevItems => {
-      return [{id: uuid, text: item}, ...prevItems]
-    })
-  }
+  function addItem (text){
+    if(!text){
+      Alert.alert('Error', 'Please enter an item', {text: 'OK'});
+      //args of alert are 1. title, 2. message. object with what should be on the button 
+    }
+    else{
+      setItems(prevItems => {
+        return [{id: uuid, text: item}, ...prevItems]
+      });
+    }
+  };
 
   return(
     <View style ={styles.container}>
