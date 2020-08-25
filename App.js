@@ -20,7 +20,7 @@ function App (){
     });
   }
 
-  function AddItem (item){
+  function addItem (item){
     setItems(prevItems => {
       return [{id: uuid, text: item}, ...prevItems]
     })
