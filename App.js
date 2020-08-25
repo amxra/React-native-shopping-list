@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import {View, Text, StyleSheet, FlatList} from 'react-native';
 import Header from './components/Header';
 import {v4 as uuid } from 'uuid';
-import ListItem from './components/ListItem'
+import ListItem from './components/ListItem';
+import AddItem from './components/AddItem'
 
 
 function App (){
@@ -22,13 +23,13 @@ function App (){
   return(
     <View style ={styles.container}>
         <Header />
+        <AddItem/>
         <FlatList data = {items} renderItem={({item}) => <ListItem item = {item} deleteItem = {deleteItem}/>
         }/>
     </View>
   );
 };
 
-2364564576
 
 const styles = StyleSheet.create({
   container:{
