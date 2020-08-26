@@ -20,6 +20,6 @@ Extras
 
 * 'npm i react-native-vector-icons' to access icons, install in project
 
-* Link any assest installed, e.g for linking vector icons 'react-native link react-native-vectors-icons'
+* Link any assest installed, e.g for linking vector icons 'react-native link react-native-vector-icons'
 
 * npm i uuid , for randomised id when needed
