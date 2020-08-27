@@ -35,3 +35,10 @@ Setting up a react native app
   * Set container to flex:1
   * Set footer to display: "relative"
   * Wrap rest of page content in <ScrollView> native container 
+ 
+ # Styling Tips 
+   * Box Shadow -
+                   shadowColor: '#000',
+                   shadowOffset: { width: 0, height: 1 },
+                   shadowOpacity: 0.8,
+                   shadowRadius: 1,  
